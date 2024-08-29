@@ -1,0 +1,48 @@
+# Eclipse specific files
+/workspace/.settings/
+/workspace/.project
+/workspace/.classpath
+
+# Ignore target directory (build artifacts)
+/workspace/target/
+
+# Ignore Maven or Gradle local repository
+/workspace/.m2/
+/workspace/.gradle/
+
+# Ignore Eclipse project-specific cache files
+/workspace/*.pydevproject
+/workspace/*.pylintrc
+
+# Ignore Eclipse JDT settings
+/workspace/.settings/org.eclipse.jdt.core.prefs
+
+# Ignore Eclipse configuration
+/workspace/.settings/org.eclipse.core.resources.prefs
+
+# Ignore IDE specific files (VSCode)
+/workspace/.vscode/
+
+# OS specific files
+/workspace/.DS_Store
+/workspace/Thumbs.db
+
+# Logs
+/workspace/*.log
+
+# Spring Boot specific
+/workspace/spring.log
+
+# Compiled class files
+/workspace/*.class
+
+# Package Files
+/workspace/*.jar
+/workspace/*.war
+/workspace/*.ear
+
+# IDE local history
+/workspace/.localhistory/
+
+# Git-specific
+/workspace/.git/
