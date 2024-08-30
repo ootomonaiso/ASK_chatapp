@@ -1,1 +1,5 @@
-# meven installをせよ
+# Springプロジェクトのはじめかた
+application.propertiesを記述してからの話
+もしだめっぽそうだったらフルサイズファイルも投げつけることを視野に入れてます。でもメタデータとかユーザー完結だしなぁあれ
+
+## Meven installをする
