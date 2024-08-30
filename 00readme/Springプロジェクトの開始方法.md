@@ -1,1 +1,0 @@
-# meven installをせよ
