@@ -1,52 +1,3 @@
-# Eclipse specific files
-/.settings/
-/.project
-/.classpath
-
-# Ignore target directory (build artifacts)
-/target/
-
-# Ignore Maven or Gradle local repository
-/.m2/
-/.gradle/
-
-# Ignore Eclipse project-specific cache files
-/*.pydevproject
-/*.pylintrc
-
-# Ignore Eclipse JDT settings
-/.settings/org.eclipse.jdt.core.prefs
-
-# Ignore Eclipse configuration
-/.settings/org.eclipse.core.resources.prefs
-
-# Ignore IDE specific files (VSCode)
-/.vscode/
-
-# OS specific files
-/.DS_Store
-/Thumbs.db
-
-# Logs
-/*.log
-
-# Spring Boot specific
-/spring.log
-
-# Compiled class files
-/*.class
-
-# Package Files
-/*.jar
-/*.war
-/*.ear
-
-# IDE local history
-/.localhistory/
-
-# Git-specific
-/.git/
-
 # Python仮想環境内の特定のファイルを無視する
 gemini/*.pyc
 gemini/*.pyo
@@ -59,3 +10,35 @@ gemini/share/
 # 仮想環境内の特定のファイルを無視する（一般的に変更されないファイル）
 gemini/pyvenv.cfg
 gemini/pyvenv.cfg.backup
+
+# Springプロジェクトのビルド出力の無視
+workspace/target/
+workspace/build/
+
+# Mavenプロジェクトの一般的なビルド出力の無視
+*.log
+*.tmp
+*.swp
+
+# Eclipseの設定フォルダとファイルの無視
+workspace/.metadata/
+workspace/.project
+workspace/.classpath
+workspace/.settings/
+workspace/.classpath
+workspace/.launch
+
+# IntelliJ IDEAの設定フォルダとファイルの無視
+workspace/.idea/
+workspace/*.iml
+
+# 一時ファイルの無視
+*.DS_Store
+*.env
+
+# EclipseとIntelliJ IDEAの一時ファイルの無視
+*.tmp
+*.bak
+
+# Mavenのローカルリポジトリの無視（リポジトリが大きい場合もある）
+workspace/.mvn/
