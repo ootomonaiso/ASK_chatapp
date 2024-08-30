@@ -25,11 +25,11 @@ workspace/ask-chat/src/main/resources/application.properties
 .snap
 
 # Eclipseの設定フォルダとファイルの無視
-workspace/.metadata/
-workspace/.project
-workspace/.classpath
-workspace/.settings/
-workspace/.launch
+workspace/ask-stem/.metadata/
+workspace/ask-stem/.project
+workspace/ask-stem/.classpath
+workspace/ask-stem/.settings/
+workspace/ask-stem/.launch
 
 # IntelliJ IDEAの設定フォルダとファイルの無視
 workspace/.idea/
@@ -139,3 +139,14 @@ build/
 
 ### VS Code ###
 .vscode/
+
+
+### NetBeans ###
+workspacennproject/private/
+workspace/nbbuild/
+workspace/dist/
+workspace/nbdist/
+workspace.nb-gradle/
+workspacebuild/
+workspace!**/src/main/**/build/
+workspace!**/src/test/**/build/
