@@ -25,11 +25,11 @@ workspace/ask-chat/src/main/resources/application.properties
 .snap
 
 # Eclipseの設定フォルダとファイルの無視
-workspace/ask-stem/.metadata/
-workspace/ask-stem/.project
-workspace/ask-stem/.classpath
-workspace/ask-stem/.settings/
-workspace/ask-stem/.launch
+workspace/ask-chat/.metadata/
+workspace/ask-chat/.project
+workspace/ask-chat/.classpath
+workspace/ask-chat/.settings/
+workspace/ask-chat/.launch
 
 # IntelliJ IDEAの設定フォルダとファイルの無視
 workspace/.idea/
