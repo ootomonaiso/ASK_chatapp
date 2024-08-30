@@ -15,6 +15,9 @@ gemini/pyvenv.cfg.backup
 workspace/target/
 workspace/build/
 
+# springのapplication.propertiesファイルの無視
+workspace/src/main/resources/application.properties
+
 # Mavenプロジェクトの一般的なビルド出力の無視
 *.log
 *.tmp
