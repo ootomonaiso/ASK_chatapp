@@ -16,7 +16,7 @@ workspace/target/
 workspace/build/
 
 # springのapplication.propertiesファイルの無視
-workspace/src/main/resources/application.properties
+workspace/ask-chat/src/main/resources/application.properties
 
 # Mavenプロジェクトの一般的なビルド出力の無視
 *.log
@@ -45,3 +45,4 @@ workspace/*.iml
 
 # Mavenのローカルリポジトリの無視（リポジトリが大きい場合もある）
 workspace/.mvn/
+
