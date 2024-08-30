@@ -104,8 +104,4 @@ ehthumbs.db
 Thumbs.db
 
 # 追加のファイル
-workspace/.metadata/.plugins/org.eclipse.m2e.logback/0.log
-workspace/.metadata/.plugins/org.eclipse.m2e.core/workspaceState.ser
-workspace/.metadata/.log
-workspace/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.index
-workspace/.metadata/.plugins/org.eclipse.jdt.core/variablesAndContainers.dat
+workspace/.metadata/
