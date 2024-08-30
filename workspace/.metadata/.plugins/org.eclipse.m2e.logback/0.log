@@ -1178,3 +1178,7 @@
 2024-08-30 23:20:07,738 [Worker-25: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
 2024-08-30 23:20:07,753 [Worker-25: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
 2024-08-30 23:20:07,757 [Worker-25: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\00pro\ASK\workspace\ask-chat\src\test\resources
+2024-08-30 23:22:24,544 [Worker-23: ビルド] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.example:ask-chat:0.0.1-SNAPSHOT @ C:\00pro\ASK\workspace\ask-chat\pom.xml.
+2024-08-30 23:22:25,287 [Worker-23: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-08-30 23:22:25,304 [Worker-23: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-08-30 23:22:25,308 [Worker-23: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\00pro\ASK\workspace\ask-chat\src\test\resources
