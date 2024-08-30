@@ -26,6 +26,7 @@ workspace/ask-chat/src/main/resources/application.properties
 
 # Eclipseの設定フォルダとファイルの無視
 workspace/ask-chat/.metadata/
+workspace\.metadata
 workspace/ask-chat/.project
 workspace/ask-chat/.classpath
 workspace/ask-chat/.settings/
