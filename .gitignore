@@ -46,3 +46,16 @@
 
 # Git-specific
 /.git/
+
+# Python仮想環境内の特定のファイルを無視する
+gemini/*.pyc
+gemini/*.pyo
+gemini/__pycache__/
+gemini/bin/
+gemini/include/
+gemini/lib/
+gemini/share/
+
+# 仮想環境内の特定のファイルを無視する（一般的に変更されないファイル）
+gemini/pyvenv.cfg
+gemini/pyvenv.cfg.backup
