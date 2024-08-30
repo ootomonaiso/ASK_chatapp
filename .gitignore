@@ -22,22 +22,18 @@ workspace/ask-chat/src/main/resources/application.properties
 *.log
 *.tmp
 *.swp
+.snap
 
 # Eclipseの設定フォルダとファイルの無視
 workspace/.metadata/
 workspace/.project
 workspace/.classpath
 workspace/.settings/
-workspace/.classpath
 workspace/.launch
 
 # IntelliJ IDEAの設定フォルダとファイルの無視
 workspace/.idea/
 workspace/*.iml
-
-# 一時ファイルの無視
-*.DS_Store
-*.env
 
 # EclipseとIntelliJ IDEAの一時ファイルの無視
 *.tmp
@@ -46,3 +42,63 @@ workspace/*.iml
 # Mavenのローカルリポジトリの無視（リポジトリが大きい場合もある）
 workspace/.mvn/
 
+# 一時ファイルと不要なファイル
+**/*.tmp
+**/*.bak
+**/*.swp
+**/*~
+**/*.log
+**/*.cache
+**/*.class
+**/*.ctxt
+**/*.mtj.tmp/
+
+# Mobile Tools for Java (J2ME)
+**/.mtj.tmp/
+
+# Package Files
+**/*.jar
+**/*.war
+**/*.nar
+**/*.ear
+**/*.zip
+**/*.tar.gz
+**/*.rar
+
+# 仮想マシンのクラッシュログ
+**/hs_err_pid*
+
+# Eclipse固有のファイル
+**/.metadata
+**/*.snap
+**/*.index
+**/*.markers
+**/*.tree
+**/.classpath
+**/.project
+**/.settings/
+
+# IntelliJ IDEA固有のファイル
+**/.idea/
+**/*.iml
+**/*.iws
+
+# Maven
+**/target/
+**/pom.xml.tag
+**/pom.xml.releaseBackup
+**/pom.xml.versionsBackup
+**/pom.xml.next
+**/release.properties
+**/dependency-reduced-pom.xml
+**/buildNumber.properties
+**/.mvn/timing.properties
+
+# OS生成ファイル
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
