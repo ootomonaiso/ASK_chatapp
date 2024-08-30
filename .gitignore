@@ -1,48 +1,104 @@
-# Eclipse specific files
-/.settings/
-/.project
-/.classpath
+# Python仮想環境内の特定のファイルを無視する
+gemini/*.pyc
+gemini/*.pyo
+gemini/__pycache__/
+gemini/bin/
+gemini/include/
+gemini/lib/
+gemini/share/
 
-# Ignore target directory (build artifacts)
-/target/
+# 仮想環境内の特定のファイルを無視する（一般的に変更されないファイル）
+gemini/pyvenv.cfg
+gemini/pyvenv.cfg.backup
 
-# Ignore Maven or Gradle local repository
-/.m2/
-/.gradle/
+# Springプロジェクトのビルド出力の無視
+workspace/target/
+workspace/build/
 
-# Ignore Eclipse project-specific cache files
-/*.pydevproject
-/*.pylintrc
+# springのapplication.propertiesファイルの無視
+workspace/ask-chat/src/main/resources/application.properties
 
-# Ignore Eclipse JDT settings
-/.settings/org.eclipse.jdt.core.prefs
+# Mavenプロジェクトの一般的なビルド出力の無視
+*.log
+*.tmp
+*.swp
+.snap
 
-# Ignore Eclipse configuration
-/.settings/org.eclipse.core.resources.prefs
+# Eclipseの設定フォルダとファイルの無視
+workspace/.metadata/
+workspace/.project
+workspace/.classpath
+workspace/.settings/
+workspace/.launch
 
-# Ignore IDE specific files (VSCode)
-/.vscode/
+# IntelliJ IDEAの設定フォルダとファイルの無視
+workspace/.idea/
+workspace/*.iml
 
-# OS specific files
-/.DS_Store
-/Thumbs.db
+# EclipseとIntelliJ IDEAの一時ファイルの無視
+*.tmp
+*.bak
 
-# Logs
-/*.log
+# Mavenのローカルリポジトリの無視（リポジトリが大きい場合もある）
+workspace/.mvn/
 
-# Spring Boot specific
-/spring.log
+# 一時ファイルと不要なファイル
+**/*.tmp
+**/*.bak
+**/*.swp
+**/*~
+**/*.log
+**/*.cache
+**/*.class
+**/*.ctxt
+**/*.mtj.tmp/
 
-# Compiled class files
-/*.class
+# Mobile Tools for Java (J2ME)
+**/.mtj.tmp/
 
 # Package Files
-/*.jar
-/*.war
-/*.ear
+**/*.jar
+**/*.war
+**/*.nar
+**/*.ear
+**/*.zip
+**/*.tar.gz
+**/*.rar
 
-# IDE local history
-/.localhistory/
+# 仮想マシンのクラッシュログ
+**/hs_err_pid*
 
-# Git-specific
-/.git/
+# Eclipse固有のファイル
+**/.metadata
+**/*.snap
+**/*.index
+**/*.markers
+**/*.tree
+**/.classpath
+**/.project
+**/.settings/
+
+# IntelliJ IDEA固有のファイル
+**/.idea/
+**/*.iml
+**/*.iws
+
+# Maven
+**/target/
+**/pom.xml.tag
+**/pom.xml.releaseBackup
+**/pom.xml.versionsBackup
+**/pom.xml.next
+**/release.properties
+**/dependency-reduced-pom.xml
+**/buildNumber.properties
+**/.mvn/timing.properties
+
+# OS生成ファイル
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
