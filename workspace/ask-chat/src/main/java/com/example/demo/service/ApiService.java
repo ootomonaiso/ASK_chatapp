@@ -12,13 +12,18 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.util.UriComponentsBuilder;
 
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
+
 @Service
 public class ApiService {
 
     private final RestTemplate restTemplate;
+    private final ObjectMapper objectMapper;
 
-    public ApiService(RestTemplate restTemplate) {
+    public ApiService(RestTemplate restTemplate, ObjectMapper objectMapper) {
         this.restTemplate = restTemplate;
+        this.objectMapper = objectMapper;
     }
 
     public String getGreetingFromFlask(String name) {
@@ -36,11 +41,20 @@ public class ApiService {
         if (responseBody != null) {
             try {
                 // URLデコードする
-                String decodedMessage = URLDecoder.decode(responseBody, StandardCharsets.UTF_8.name());
-                return decodedMessage;
+                String decodedResponseBody = URLDecoder.decode(responseBody, StandardCharsets.UTF_8.name());
+
+                // JSONパース
+                JsonNode jsonNode = objectMapper.readTree(decodedResponseBody);
+                // メッセージを抽出
+                String message = jsonNode.get("message").asText();
+                return message;
+                
             } catch (UnsupportedEncodingException e) {
                 e.printStackTrace();
                 return "デコードエラー";
+            } catch (Exception e) {
+                e.printStackTrace();
+                return "パースエラー";
             }
         }
         return "レスポンスが空です";
