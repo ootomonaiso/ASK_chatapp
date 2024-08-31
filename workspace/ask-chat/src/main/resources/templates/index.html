@@ -1,10 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
+    <meta charset="UTF-8">
+    <title>Greeting Page</title>
 </head>
 <body>
+    <h1>Flask APIからの応答を取得</h1>
 
+    <form action="/get-greeting" method="get">
+        <label for="name">名前を入力してください:</label>
+        <input type="text" id="name" name="name" required>
+        <button type="submit">挨拶を取得</button>
+    </form>
+
+    <div>
+        <h2>APIの応答:</h2>
+        <p th:text="${greeting}">ここに応答が表示されます</p>
+    </div>
 </body>
 </html>
