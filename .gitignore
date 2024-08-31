@@ -40,7 +40,7 @@ workspace/*.iml
 *.tmp
 *.bak
 
-# Mavenのローカルリポジトリの無視（リポジトリが大きい場合もある）
+# Mavenの設定フォルダとファイルの無視
 workspace/.mvn/
 
 # 一時ファイルと不要なファイル
@@ -140,14 +140,3 @@ build/
 
 ### VS Code ###
 .vscode/
-
-
-### NetBeans ###
-workspacennproject/private/
-workspace/nbbuild/
-workspace/dist/
-workspace/nbdist/
-workspace.nb-gradle/
-workspacebuild/
-workspace!**/src/main/**/build/
-workspace!**/src/test/**/build/
