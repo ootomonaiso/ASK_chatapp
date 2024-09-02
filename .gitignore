@@ -16,7 +16,7 @@ workspace/target/
 workspace/build/
 
 # springのapplication.propertiesファイルの無視
-workspace/ask-chat/src/main/resources/application.properties
+# workspace/ask-chat/src/main/resources/application.properties
 
 # Mavenプロジェクトの一般的なビルド出力の無視
 *.log
@@ -127,16 +127,6 @@ target/
 *.iws
 *.iml
 *.ipr
-
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
 
 ### VS Code ###
 .vscode/
