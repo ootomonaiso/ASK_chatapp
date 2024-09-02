@@ -4,18 +4,18 @@ import google.generativeai as genai
 app = Flask(__name__)
 
 # Gemini APIの設定
-genai.configure(api_key="YOUR_API_KEY")  # APIキーを設定
+genai.configure(api_key="AIzaSyCq-L4GHVc0heFeCRV45Fmo4cqZfJTVBZ4")  # APIキーを設定
 
 # モデルの指定
 model = genai.GenerativeModel('models/gemini-1.0-pro-latest')
 
 # カテゴリのリスト（事前設定）
 CATEGORIES = [
-    "学校基礎データ",
-    "部活動の内容",
+    "学校の基本的な情報",
+    "部活動の活動内容",
     "部活動の表彰",
     "学科の基本的な説明",
-    "学科の活動"
+    "学科の活動内容"
 ]
 
 @app.route('/api/find-relevant-category', methods=['POST'])
